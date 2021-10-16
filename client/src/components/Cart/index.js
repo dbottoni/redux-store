@@ -79,11 +79,15 @@ const Cart = () => {
               {state.cart.map(item => (
                 <CartItem key={item._id} item={item} />
               ))}
+
               <div className="flex-row space-between">
-                <strong>Total: ${calculateTotal()}</strong>
+                <strong>Total: ${calculateTotal()} </strong>
+                
                 {
                   Auth.loggedIn() ?
-                    <button onClick={submitCheckout}>Checkout</button>
+                    <button onClick={submitCheckout}>
+                      Checkout
+                    </button>
                     :
                     <span>(log in to check out)</span>
                 }

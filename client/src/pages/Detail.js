@@ -69,6 +69,7 @@ function Detail() {
         product: { ...currentProduct, purchaseQuantity: 1 }
       });
       idbPromise('cart', 'put', { ...currentProduct, purchaseQuantity: 1});
+
     }
   };
 
@@ -83,20 +84,28 @@ function Detail() {
 
   return (
     <>
-      {currentProduct ? (
+      {currentProduct && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+          <Link to="/">
+            ← Back to Products
+            </Link>
 
           <h2>{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <p>
+            {currentProduct.description}
+          </p>
 
           <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onCLick={addToCart}>Add to Cart</button>
+            <strong>Price:</strong>
+            ${currentProduct.price}
+            {""}
+            <button onClick={addToCart}>
+              Add to Cart
+            </button>
             <button
-            disabled={!cart.find(p => p._id === currentProduct._id)}
-            onClick={removeFromCart}
+              disabled={!cart.find(p => p._id === currentProduct._id)}
+              onClick={removeFromCart}
             >
               Remove from Cart
             </button>
@@ -108,10 +117,12 @@ function Detail() {
           />
         </div>
       ) : null}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      {
+      loading ? <img src={spinner} alt="loading" /> : null
+      }
       <Cart />
     </>
   );
-}
+};
 
 export default Detail;

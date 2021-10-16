@@ -55,11 +55,11 @@ function Login(props) {
             onChange={handleChange}
           />
         </div>
-        {error ? (
-          <div>
+        {
+         error ? <div>
             <p className="error-text">The provided credentials are incorrect</p>
-          </div>
-        ) : null}
+          </div> : null
+        }
         <div className="flex-row flex-end">
           <button type="submit">
             Submit

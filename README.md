@@ -6,6 +6,7 @@ To use Redux to manage global state instead of the Context API so the website's 
 
 ## Screenshot
 
+
 ## Heroku Link
 
 

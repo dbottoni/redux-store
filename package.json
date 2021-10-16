@@ -1,7 +1,7 @@
 {
   "name": "mern-shopping",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -16,5 +16,13 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbottoni/redux-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbottoni/redux-store/issues"
+  },
+  "homepage": "https://github.com/dbottoni/redux-store#readme"
 }

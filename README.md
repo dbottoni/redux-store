@@ -12,6 +12,6 @@ To use Redux to manage global state instead of the Context API so the website's 
 
 
 ## Heroku Link
- - Issues with Heroku on Modules 21 and 22 - error below. Been trouble shooting for a week, not able to resovle it thusfar
+ - Issues with Heroku on Modules 21 and 22 - error below. Been trouble shooting for a week, not able to resolve it thusfar
 
 ![image](https://user-images.githubusercontent.com/72705457/137639257-8fe94601-dc0e-49fd-a6d6-ef479b4b4e30.png)
